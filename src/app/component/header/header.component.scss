@@ -1,64 +1,42 @@
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-th {
-    background-color: #f2f2f2;
-    text-align: center;
-}
-td {
-    text-align: center;
-}
-.section-title {
-    background-color: #7E8EF1;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-table tr:first-child th:first-child {
-    border-top-left-radius: 10px;
-}
-table tr:first-child th:last-child {
-    border-top-right-radius: 10px;
-}
-table tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-}
-table tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+.mat-toolbar {
+    background: #1C1B1F;
+    display: flex;
+    gap: 10px;
+    color: #FFFBFE;
+    font-family: 'Poppins', sans-serif;
 }
 
-.info-basica {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
+.example-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(245, 135, 138, 0.4);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
-.info-basica td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+
+.mat-icon-button:hover,
+.mat-icon-button:focus {
+  background-color: rgba(52, 152, 219, 0.1); // Leve mudança de cor no hover/foco
 }
-.info-basica tr:first-child td:first-child {
-    border-top-left-radius: 10px;
+
+.mat-icon-button:active {
+    background-color: rgba(52, 152, 219, 0.2); // Leve mudança de cor quando pressionado
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); // Sombra interna para efeito de "afundar"
+  }
+
+.mat-icon-button .mat-icon {
+  color: inherit; // Mantém a cor do ícone como herança, ou defina uma cor específica
 }
-.info-basica tr:first-child td:last-child {
-    border-top-right-radius: 10px;
-}
-.info-basica tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-}
-.info-basica tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
+
+.mat-icon {
+   color: #F5878A;
 }
